@@ -1,11 +1,12 @@
 import React from 'react';
 import { useLaunchMissionInfoQuery } from './../../generated/graphql'
-import MissionList from './MissionInfo';
+import MissionInfo from './MissionInfo';
 
-const MissionInfoContainer = () => {
-
+const MissionInfoContainer = (props:any) => {
+// props.getId(1)
+console.log(props.id)
     const { data, loading, error } = useLaunchMissionInfoQuery({
-        variables: { id: '25' },
+        variables: { id: props.id },
     });
 
     if (loading)
@@ -16,7 +17,7 @@ const MissionInfoContainer = () => {
     console.log(data);
 
     return (
-        <MissionList data={data} />
+        <MissionInfo data={data} />
     )
 }
 

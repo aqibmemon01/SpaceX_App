@@ -1,0 +1,38 @@
+.missionListMain{
+    background-color: rgb(35, 48, 68);
+    color: white;
+    flex-shrink: 1 !important;
+    width: 30%;
+    /* width: 500px !important; */
+}
+.missionListMain > h3{
+  text-align: center;
+}
+.missionListMain > ul {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+.missionListMain > ul > li {
+    cursor: pointer;
+    background-color: teal;
+    margin: 0 0 0 0;
+    padding: 10px;
+}
+.missionListMain > ul > li:hover{
+    background-color: tomato;
+} 
+.missionListMain > ul > li > a:active{
+    background-color: aquamarine;
+}
+.image-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+.image-list > .image{
+    width: 45%;
+    margin: 2%;
+}
+.MissionInfoMain{
+    flex-shrink: 4 !important;
+}
